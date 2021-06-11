@@ -4,14 +4,14 @@
     align-items: center;
     justify-content: baseline;
     flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0);
     width: 200px;
     height: 200px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 .Weather__card:hover {
     background-color: rgba(104, 103, 104, 0.1);
-    transform: scale(1.05);
-    border: 1px solid lightslategray;
+    border: 1px solid rgb(158, 158, 158);
     cursor: pointer;
 }
 .Image__container {
