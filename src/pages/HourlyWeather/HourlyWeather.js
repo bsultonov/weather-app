@@ -49,7 +49,7 @@ const HourlyWeather = ({weatherData}) => {
             {hourlyWeather.length ?
                 <HourlyWeatherTable hourlyWeather={hourlyWeather} />   
             :
-                <NoData message={validWeekDay ? "Hourly weather data is not available" : "Please, enter valid week day name!"} />
+                <NoData message={validWeekDay ? "Hourly weather data is not available" : "Please, enter valid week day!"} />
             }
         </div>
     )
