@@ -29,7 +29,7 @@ const HourlyWeather = ({weatherData}) => {
     const getWeatherByWeekDay = (weekDay) => {
         var dailyWeatherDate = weatherData.daily.find(el => {
         var t = unixToDate(el.dt);
-        return t.toLocaleString([], {weekday: 'short'}).toLowerCase() === weekDay.toLowerCase();
+        return t.toLocaleString("en_US", {weekday: 'short'}).toLowerCase() === weekDay.toLowerCase();
         })
 
         getHourlyWeather(dailyWeatherDate.dt)
@@ -45,7 +45,7 @@ const HourlyWeather = ({weatherData}) => {
 
     return (
         <div className="Wrapper">
-            <h2>{selectedDate && selectedDate.toLocaleString([], {weekday: 'short', year: 'numeric', month: 'long', day: 'numeric'})}</h2>
+            <h2>{selectedDate && selectedDate.toLocaleString("en_US", {weekday: 'short', year: 'numeric', month: 'long', day: 'numeric'})}</h2>
             {hourlyWeather.length ?
                 <HourlyWeatherTable hourlyWeather={hourlyWeather} />   
             :
