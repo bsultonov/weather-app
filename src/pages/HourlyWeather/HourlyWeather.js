@@ -9,8 +9,6 @@ const HourlyWeather = ({weatherData}) => {
 
     let { weekDay } = useParams();
 
-    console.log(weatherData)
-
     const [hourlyWeather, setHourlyWeather] = useState([]);
     const [selectedDate, setSelectedDate] = useState();
     const [validWeekDay, setValidWeekDay] = useState(false);
@@ -24,7 +22,7 @@ const HourlyWeather = ({weatherData}) => {
           
           return t2.getDate() === t.getDate()
         })
-        
+
         setHourlyWeather(hourly);
       }
 
