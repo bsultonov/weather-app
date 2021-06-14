@@ -1,4 +1,4 @@
-const baseUrl = 'http://api.openweathermap.org/data/2.5/onecall?';
+const baseUrl = 'https://api.openweathermap.org/data/2.5/onecall?';
 const apiKey = '351b563fc41a2cefa1479e55b3c2fba3';
 
 export const getWeatherData = async ({lat = "41.311081", lon = "69.240562"}) => {
