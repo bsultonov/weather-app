@@ -4,6 +4,7 @@
     width: 50%;
     margin: auto auto;
     margin-top: 10px;
+    text-align: center;
   }
   
    .hourlyWeatherTable__wrapper th {
