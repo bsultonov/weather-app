@@ -1,12 +1,12 @@
 .hourlyWeatherTable__wrapper {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 30%;
+    width: 50%;
     margin: auto auto;
     margin-top: 10px;
   }
   
-  .hourlyWeatherTable__wrapper td, .hourlyWeatherTable__wrapper th {
+   .hourlyWeatherTable__wrapper th {
     border: 1px solid #ddd;
     padding: 8px;
   }
